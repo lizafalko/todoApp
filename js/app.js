@@ -21,6 +21,14 @@ function createTodoItem(title) {
 
   const listItem = createElement('li');
   listItem.className = 'todo-item';
+
+  listItem.appendChild(checkbox);
+  listItem.appendChild(label);
+  listItem.appendChild(editInput);
+  listItem.appendChild(editButton);
+  listItem.appendChild(deleteInput);
+
+  return listItem;
 }
 
 function addTodoItem(event) {
